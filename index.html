@@ -5,68 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Julian Ullrich - Backend Developer</title>
     <style>
+        /* General Styles */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #1e1e2f;
-            color: #ffffff;
+            background-color: #f4f4f9;
+            color: #333;
             margin: 0;
             padding: 0;
             line-height: 1.6;
         }
         .container {
-            max-width: 800px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
         }
         header {
             text-align: center;
-            padding: 50px 0;
+            padding: 60px 0;
+            background: linear-gradient(135deg, #6200ee, #3700b3);
+            color: #ffffff;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            animation: fadeIn 1.5s ease-in-out;
         }
         header h1 {
-            font-size: 2.5em;
+            font-size: 3em;
             margin: 0;
-            color: #00ff88;
+            animation: slideIn 1s ease-in-out;
         }
         header p {
-            font-size: 1.2em;
-            color: #a0a0a0;
+            font-size: 1.4em;
+            color: #e0e0e0;
+            animation: slideIn 1.2s ease-in-out;
         }
         .section {
-            margin-bottom: 40px;
+            margin-bottom: 50px;
+            animation: fadeIn 1.5s ease-in-out;
         }
         .section h2 {
-            font-size: 1.8em;
-            color: #00ff88;
-            border-bottom: 2px solid #00ff88;
+            font-size: 2em;
+            color: #6200ee;
+            border-bottom: 3px solid #6200ee;
             padding-bottom: 10px;
+            margin-bottom: 20px;
+            animation: slideIn 1s ease-in-out;
         }
         .skills, .projects, .experience, .education {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
         }
         .skills div, .projects div, .experience div, .education div {
-            background-color: #2a2a40;
-            padding: 15px;
-            border-radius: 8px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .skills div:hover, .projects div:hover, .experience div:hover, .education div:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
         }
         .skills h3, .projects h3, .experience h3, .education h3 {
             margin-top: 0;
-            color: #00ff88;
+            color: #6200ee;
+            font-size: 1.5em;
         }
         a {
-            color: #00ff88;
+            color: #6200ee;
             text-decoration: none;
+            transition: color 0.3s ease;
         }
         a:hover {
+            color: #3700b3;
             text-decoration: underline;
         }
         footer {
             text-align: center;
-            padding: 20px 0;
-            color: #a0a0a0;
-            font-size: 0.9em;
+            padding: 30px 0;
+            color: #666;
+            font-size: 1em;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+            header p {
+                font-size: 1.2em;
+            }
+            .skills, .projects, .experience, .education {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -142,7 +184,7 @@
         </section>
 
         <footer>
-            <p>Contact: <a href="mailto:Julian.Ullrich@live.de">Julian.Ullrich@live.de</a> | GitHub: <a href="https://github.com/Lunnaris01">Lunnaris01</a></p>
+            <p>Contact: <a href="mailto:Julian_Ullrich@live.de">Mail</a> | GitHub: <a href="https://github.com/Lunnaris01">Github</a></p>
         </footer>
     </div>
 </body>
