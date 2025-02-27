@@ -7,9 +7,9 @@
     <style>
         /* General Styles */
         body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #1a1a2e, #16213e); /* Dark gradient background */
-            color: #e0e0e0; /* Light text for contrast */
+            font-family: 'Courier New', monospace; /* Monospace font for code-like feel */
+            background-color: #1e1e1e; /* Dark background like VSCode */
+            color: #d4d4d4; /* Light gray text for contrast */
             margin: 0;
             padding: 0;
             line-height: 1.6;
@@ -21,71 +21,68 @@
         }
         header {
             text-align: center;
-            padding: 80px 0;
-            background: rgba(255, 255, 255, 0.1); /* Glassmorphism effect */
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
+            padding: 60px 0;
             margin-bottom: 40px;
             animation: fadeIn 1.5s ease-in-out;
-            border: 1px solid rgba(255, 255, 255, 0.2);
         }
         header h1 {
-            font-size: 3.5em;
+            font-size: 3em;
             margin: 0;
-            color: #00ff88; /* Neon green for the title */
+            color: #4ec9b0; /* VSCode teal for the title */
             animation: slideIn 1s ease-in-out;
         }
         header p {
             font-size: 1.4em;
-            color: #a0a0a0; /* Light gray for subtitle */
+            color: #9cdcfe; /* VSCode light blue for subtitle */
             animation: slideIn 1.2s ease-in-out;
         }
         .section {
-            margin-bottom: 60px;
+            margin-bottom: 50px;
             animation: fadeIn 1.5s ease-in-out;
         }
         .section h2 {
-            font-size: 2.5em;
-            color: #00ff88; /* Neon green for section headings */
+            font-size: 2em;
+            color: #569cd6; /* VSCode blue for section headings */
             margin-bottom: 20px;
             animation: slideIn 1s ease-in-out;
         }
         .skills, .projects, .experience, .education {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+            gap: 20px;
         }
         .skills div, .projects div, .experience div, .education div {
-            background: rgba(255, 255, 255, 0.1); /* Glassmorphism effect */
-            backdrop-filter: blur(10px);
-            padding: 25px;
-            border-radius: 15px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+            background-color: #252526; /* Dark gray for cards, like VSCode panels */
+            padding: 20px;
+            border-radius: 5px;
+            border: 1px solid #3c3c3c; /* Border for separation */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .skills div:hover, .projects div:hover, .experience div:hover, .education div:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(0, 255, 136, 0.3); /* Neon green shadow */
-            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
         }
         .skills h3, .projects h3, .experience h3, .education h3 {
             margin-top: 0;
-            color: #00ff88; /* Neon green for subheadings */
-            font-size: 1.8em;
+            color: #dcdcaa; /* VSCode yellow for subheadings */
+            font-size: 1.5em;
+        }
+        p {
+            color: #d4d4d4; /* Light gray for text */
         }
         a {
-            color: #00ff88; /* Neon green for links */
+            color: #569cd6; /* VSCode blue for links */
             text-decoration: none;
             transition: color 0.3s ease;
         }
         a:hover {
-            color: #00cc66; /* Slightly darker green on hover */
+            color: #4ec9b0; /* VSCode teal on hover */
             text-decoration: underline;
         }
         footer {
             text-align: center;
-            padding: 40px 0;
-            color: #a0a0a0;
+            padding: 30px 0;
+            color: #9cdcfe; /* VSCode light blue for footer text */
             font-size: 1em;
             animation: fadeIn 1.5s ease-in-out;
         }
@@ -118,7 +115,7 @@
     <div class="container">
         <header>
             <h1>Julian Ullrich</h1>
-            <p>Backend Developer | AI Enthusiast | Open Source Contributor</p>
+            <p>Backend Developer | AI Engineer | Data Scientist</p> <!-- Updated subtitle -->
         </header>
 
         <section class="section">
@@ -184,7 +181,6 @@
                 </div>
             </div>
         </section>
-
         <footer>
             <p>Contact: <a href="mailto:Julian_Ullrich@live.de">Mail</a> | GitHub: <a href="https://github.com/Lunnaris01">Github</a></p>
         </footer>
